@@ -1,10 +1,14 @@
 let count = 0;
+let paraEl = document.getElementById("save");
+let saveEntry;
 console.log(typeof count);
 //increment the value of count by one
 function increment() {
-  count = count + 1;
+  count += 1;
   document.getElementById("count-el").innerText = count;
 }
+
 function save() {
-  console.log(count);
+  saveEntry = count + " - ";
+  paraEl.innerText += saveEntry;
 }
