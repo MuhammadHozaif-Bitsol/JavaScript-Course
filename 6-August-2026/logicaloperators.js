@@ -2,6 +2,8 @@ let hasSolvedChallenge = false;
 let hasHintsLeft = false;
 let hasCompletedCourse = true;
 let givesCertificate = true;
+let dayOfMonth = 13;
+let weekday = "Friday";
 function showSolution() {
   console.log("showing solution");
 }
@@ -17,4 +19,7 @@ if (hasCompletedCourse === true || givesCertificate === true) {
 
 function generateCertificate() {
   console.log("Generating certificate....");
+}
+if (dayOfMonth === 13 && weekday === "Friday") {
+  console.log("😱");
 }
